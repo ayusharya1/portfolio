@@ -1,0 +1,167 @@
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    &.active{
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+    }
+    .Nav-container{
+        position: relative;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:1.2rem 2rem ;
+        margin-left: auto;
+        margin-right: auto;
+        .logo{
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family:"Italianno-Regular";
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: bolder;
+            position: relative;
+            h3{
+                position: absolute;
+                right: 32%;
+            }
+        }
+        .nav_links{
+            display: flex;
+            list-style: none;
+            margin-right: 2rem;
+            @media screen and (max-width: 800px){
+                display: none;
+            }
+            li{
+                margin-left: 3rem;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 0.85rem;
+                    opacity: 0.8;
+                    transition: 3s;
+                    display: inline-block;
+                    &:hover{
+                        opacity: 1;
+                        animation-name: navanima;
+                        animation-duration: .8s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 2;
+                        animation-direction: alternate;
+                        
+                    }
+                }
+                @keyframes navanima {
+                    0% {
+                        width: 0%;
+                        color: #C3447A;
+                        border-bottom: 2px solid #C3447A;
+                    }
+                
+                    100% {
+                        width: 100%;
+                        color: #C3447A;
+                        border-bottom: 2px solid #C3447A;
+                    }
+                }
+            }
+        }
+        .social_icons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            @media screen and (max-width:800px){
+                display: none;
+            }
+            div{
+                opacity:0.8;
+                font-size: 1.3rem;
+                margin-left: 1rem;
+                &:hover{
+                    opacity: 1;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .menu{
+            background: #fff;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            display: none;
+            @media screen and (max-width:800px) {
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            svg{
+                width: 70%;
+                height: 70%;
+            }
+            
+        }
+        .closeMenu{
+            background: #000;
+            width: 4rem;
+            height: 4rem;
+            position: fixed;
+            border-radius: 50%;
+            right: 0;
+            top: 0;
+            
+        }
+        .menuX{
+            color: #fff;
+            position: fixed;
+            top: 2rem;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            // background-color: #000;
+            svg{
+                cursor: pointer;
+                width: 1.5rem;
+                height: 1.5rem;
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+                
+            }
+            li{
+                list-style: none;
+                margin-top: 1rem;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    opacity: 0.6;
+                    text-transform: uppercase;
+                    &:hover{opacity: 1;}
+                }
+
+            }
+        }
+    }
+}

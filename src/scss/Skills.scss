@@ -1,0 +1,45 @@
+.skill{
+    // margin-top: -3%;
+}
+.select{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    button{
+        color: #000;
+        background: #fff;
+        padding: 0.65rem 1rem;
+        border: none;
+        margin-top: 1rem;
+        cursor: pointer;
+        font-size: 0.85rem;
+        font-family: 'Poppins';
+        border-radius: 10px;
+        &.active{
+            background-color: #C3447A;
+            color: #fff;
+        }
+    }
+  
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    max-width: 700px;
+    margin:0 auto;
+    row-gap: 4rem;
+    place-items: center;
+    margin-bottom: 5rem;
+    @media screen and (max-width:500px) {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.6rem;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        width: 50%;
+    }
+}

@@ -1,0 +1,198 @@
+  /* 
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    
+  }
+  html,body{
+    overflow-x: hidden;
+    background-color: rgb(30, 29, 29);
+    font-family:"Poppins",sans-serif;
+    font-weight: 500;
+    background-image: url("https://img.freepik.com/free-photo/top-view-desk-concept-with-copy-space_23-2148459498.jpg?uid=R195604539&ga=GA1.1.1665129029.1744306784&semt=ais_hybrid&w=740");
+      background-repeat: no-repeat;
+    background-size: cover;
+    background: url("./assets/bgvideo.mp4");
+  }
+
+  img{
+    width: 100%;
+  }
+  .container{
+    max-width: 1224px;
+    min-height: 100vh;
+    padding: 7rem 1.5rem 0 1.5;
+    margin: 0 auto;
+    
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url(../public/fonts/Poppins/Poppins-Medium.ttf);
+  }
+  @font-face {
+    font-family: "Italianno-Regular";
+    src: url(../public/fonts/Stylish/Italianno-Regular.ttf);
+  }
+  @font-face {
+    font-family: "circular-web";
+    src: url(../public/fonts/Stylish/circularweb-book.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "general";
+    src: url(../public/fonts/Stylish/general.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "robert-medium";
+    src: url(../public/fonts/Stylish/robert-medium.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "robert-regular";
+    src: url(../public/fonts/Stylish/robert-regular.woff2) format("woff2");
+  }
+
+  @font-face {
+    font-family: "EBGaramond-VariableFont_wght";
+    src: url(../public/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf)
+  }
+
+  @font-face {
+    font-family: "zentry";
+    src: url(..//public/fonts/Stylish/zentry-regular.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Italianno-Regular";
+    src: url(../public/fonts/Italianno/Italianno-Regular.ttf);
+  }
+  .title{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .title span{
+    color: #C3447A;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+  }
+  .title h1{
+    color: #fff;
+    font-size: 4rem;
+    position: relative;
+  }
+  @media screen and (max-width: 500px){
+    .container{
+      padding: 7rem 1rem  0 1rem;
+    }
+    .title h1{
+      font-size: 2rem;
+    }
+  } */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  position: relative;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1224px;
+  min-height: 100vh;
+  padding: 7rem 1.5rem 0 1.5rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  background: transparent !important; /* Ensure no background hides video */
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../public/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Italianno-Regular";
+  src: url(../public/fonts/Stylish/Italianno-Regular.ttf);
+}
+
+@font-face {
+  font-family: "circular-web";
+  src: url(../public/fonts/Stylish/circularweb-book.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "general";
+  src: url(../public/fonts/Stylish/general.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "robert-medium";
+  src: url(../public/fonts/Stylish/robert-medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "robert-regular";
+  src: url(../public/fonts/Stylish/robert-regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "EBGaramond-VariableFont_wght";
+  src: url(../public/fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "zentry";
+  src: url(../public/fonts/Stylish/zentry-regular.woff2) format("woff2");
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title span {
+  color: #C3447A;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.title h1 {
+  color: #fff;
+  font-size: 4rem;
+  position: relative;
+}
+
+/* Background video styles */
+.video-background {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  z-index: -1 !important;
+  opacity: 0.2 !important;
+}
+
+/* Fallback background color if video fails to load */
+body {
+  background-color: rgb(30, 29, 29);
+}

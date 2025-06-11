@@ -1,0 +1,236 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: -1rem;
+  // width: 100vh;
+  @media screen and (max-width: 400px) {
+    margin-bottom: -3rem;
+    margin-top: 0rem;
+  }
+  @media screen and (max-width: 530px) {
+    margin-top: 2.5rem;
+    margin-bottom: -10rem;
+  }
+  @media screen and (max-width: 1100px) {
+    // margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+  .profile {
+    width: 200px;
+    height: 200px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .profile_text {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    h3 {
+      color: white;
+      font-size: 2rem;
+      @media screen and (max-width: 500px) {
+        font-size: 1.5rem;
+      }
+        span {
+          // color: #8c12f0;
+          color: #c3447a;
+        }
+    }
+    .job {
+      color: #fff;
+      opacity: 0.5;
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+    // .text {
+    //   margin-top: 1.5rem;
+    //   color: #fff;
+    //   text-align: center;
+    //   font-size: 4rem;
+    //   line-height: 1.2;
+    //   @media screen and (max-width: 800px) {
+    //     font-size: 3rem;
+    //     margin-top: 1.2rem;
+    //   }
+    //   @media screen and (max-width: 530px) {
+    //     font-size: 2rem;
+    //   }
+    // }
+    
+    a {
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #000;
+      background: #fff;
+      padding: 0.65rem 1rem;
+      border-radius: 10px;
+      text-transform: capitalize;
+      @media screen and (max-width:400px){
+        // margin-bottom: 6rem;
+        // margin-top: 1rem;
+        margin-top:1.5rem !important;
+      }
+      @media screen and (max-width:530px){
+        // margin-bottom: 6rem;
+        margin-top: 4rem;
+      }
+    }
+    // div {
+    //   position: absolute;
+    //   background: rgba(255, 255, 255, 0.15);
+    //   color: #fff;
+    //   padding: 0.35rem 1rem;
+    //   border-radius: 25px;
+    //   font-size: 0.85rem;
+    //   cursor: pointer;
+    //   @media screen and (max-width: 800px) {
+    //     display: none;
+    //   }
+    // }
+    .web {
+      right: -2rem;
+      top: 3.5rem;
+      width: 12rem;
+      height: 2rem;
+      transition: 1s;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        padding: 0.35rem 1rem;
+        padding-left: 20px;
+        border-radius: 25px;
+        font-size: 0.85rem;
+        cursor: pointer;
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+      &:hover {
+        transform: perspective(20px) rotateX(8deg) translateY(-5px);
+        // background-image: url("https://img.freepik.com/free-photo/festive-shiny-glitter-texture-background_23-2149009711.jpg?t=st=1738320031~exp=1738323631~hmac=81acc9154b941f2c55e3d98cc9323b3cc9bdf7c2d47a1cbffec4661e2b9621e7&w=1060");
+        background-image: url("/src/assets/grimage.avif");
+        opacity: 0.9;
+        span {
+          // transform: rotate3d(10, 20, 0, 0deg);
+        }
+      }
+      span {
+        transition: 1s;
+        position: absolute;
+      }
+    }
+    .freelance {
+      top: 3.5rem;
+      left: -1.5rem;
+      width: 10rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 1s;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      padding: 0.35rem 1rem;
+      border-radius: 25px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+      &:hover {
+        transform: perspective(20px) rotateX(8deg) translateY(-5px);
+        // background-image: url("https://img.freepik.com/free-photo/festive-shiny-glitter-texture-background_23-2149009711.jpg?t=st=1738320031~exp=1738323631~hmac=81acc9154b941f2c55e3d98cc9323b3cc9bdf7c2d47a1cbffec4661e2b9621e7&w=1060");
+        background-image: url("/src/assets/grimage.avif");
+        opacity: 0.8;
+        span {
+          // transform: rotate3d(10, 20, 0, 0deg);
+        }
+      }
+      span {
+        transition: 1s;
+        position: absolute;
+      }
+    }
+  }
+}
+
+
+.text{
+  margin-top: 1rem;
+  width: 100%;
+  height:fit-content;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+ position: relative;
+ top: 100%;
+//  padding: 1rem;
+
+ flex-direction: column;
+ & .text-div{
+  width: 100%;
+  height: fit-content;
+  // background-color: #c3447a;
+  font-size: 3.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+    @media screen and (max-width: 800px) {
+        font-size: 3rem;
+        margin-top: 1.2rem;
+      }
+      @media screen and (max-width: 530px) {
+        font-size: 2.2rem;
+        line-height: 1.2;
+      }
+  & span{
+    margin-right: 1rem;
+    // text-align: center;
+  }
+ }
+}
+.text-div:nth-child(1){
+  // background-color: #c3447a;
+  text-align: center;
+}
+.text-div:nth-child(2){
+  // background-color: #c3447a;
+  // text-align: right !important;
+  padding-left: 1rem !important;
+}
+.text-div:nth-child(3){
+  // background-color: red;
+  // text-align: right !important;
+  padding-left: 3rem !important;
+}
+.scrolldiv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: transparent !important;
+  @media screen and (max-width:1024px) {
+    width: 80%;
+    height: 80%;
+    margin-right: 1rem;
+  }
+  @media screen and (max-width:800px) {
+    display: none;
+  }
+}
+.scrollImg {
+  width: 35%;
+  border-radius: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

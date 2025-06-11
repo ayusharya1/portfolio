@@ -1,0 +1,99 @@
+.about_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    margin-bottom: 2rem;
+    @media screen and (max-width:700px) {
+        grid-template-columns: 1fr;
+    }
+    .about_left{
+        
+        max-width: 380px;
+        height: 400px;
+        justify-self: center;
+        border-radius: 5px;
+        cursor: pointer;
+        .img-div{
+            max-width: 390px;
+        height: 450px;
+        border-radius: 5px;
+        box-shadow: 0 0  22px #C3447A;
+        background: #C3447A;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+        
+    }
+    .about_right{
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        // overflow: hidden;
+        @media  screen and (max-width:700px){
+            padding: 0;
+            margin-top: 5rem;
+        }
+        div{
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            max-width: 550px;
+            line-height: 1.5rem;
+            p{
+                margin-bottom: 0.3rem;
+                font-weight: 400;
+                word-spacing: 2px;
+            }
+        }
+        .bio{
+            display: flex;
+            font-size: 0.95rem;
+            max-width: 250px;
+            margin-bottom: 1rem;
+            .biokey{
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-right: 3rem;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            background-color: #fff;
+            font-size: 0.85rem;
+            position: relative;
+            text-transform: capitalize;
+            width: 165px;
+            border-radius: 10px;
+            padding: 0.65rem 1rem;
+            margin-top: 0.7rem;
+            overflow: hidden;
+            &:hover{
+                color: #fff;
+            }
+            &::after{
+                content: "Download";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 165px;
+                height: 42px;
+                background-color: #C3447A;
+                left: 0;
+                bottom: -105%;
+                border-radius: 50%;
+                transition: all ease 0.3s;
+            }
+            &:hover::after {
+                bottom: 0;
+                border-radius: 0;
+              }
+        }
+    }
+}
