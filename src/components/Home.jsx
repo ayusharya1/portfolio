@@ -190,7 +190,7 @@ function Home() {
         <motion.a
           variants={moveVariants}
           animate="animation"
-          href="contact"
+          href="#contact"
           whileHover={{ scale: 1.1,backgroundColor:" #c3447a",color:"#fff" }}
           transition={{ duration: 0.3 }}
           onMouseEnter={scrumble}
